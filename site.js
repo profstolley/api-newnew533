@@ -8,8 +8,7 @@ var food = {
 		"soysauce",
     "Chicken Wings",
     "sugar"
-		]
-		}
+  ]
 	},
   $('#result').hide();
   	$('#button').on("click",function(e){

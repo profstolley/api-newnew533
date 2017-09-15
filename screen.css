@@ -28,7 +28,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+html {
 	line-height: 1;
 }
 ol, ul {
@@ -47,10 +47,58 @@ table {
 	border-spacing: 0;
 }
 
+/* End Reset CSS */
+/* Begin Site CSS */
+
+html {
+	text-rendering: optimizeLegibility;
+	font-family: georgia, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	font-size: 1.125em; /* 18 / 16 = 1.125 */
+	line-height: 21.6px; /* 21.6 / 18 = 1.2 */
+	line-height: 1.222222em; /* 22 / 18 = 1.22222 */
+	padding-top:  3em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	background-color: #e5f8f9;
+	text-align: center;
+}
+
+body{
+	background-color: #e5f8f9;
+	text-align: center;
+}
 
 h1 {
-  color: purple;
-  font-size: 3em;
-  font-weight: bold;
-  font-family: Helvetica, Arial, sans-serif;
+	line-height: 2.5em;
+	font-size: 3.5em;
+	text-transform: capitalize;
+	font-weight: bold;
+	text-align: center;
+color:#66E0FF;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	font-family: 'georgia', Times, serif;
+	line-height: 1.25em;
+	margin-bottom: 1.5em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	padding-left: 2.5em;
+	padding-right: 2.5em;
+	text-indent: 1.25em;
+	text-align: justify;
+	color:rgb(0, 204, 153);
+}
+
+
+p, figure {
+	padding-bottom: 1.2em; /* = 1 line-height */
 }

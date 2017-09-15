@@ -72,6 +72,11 @@ h1 {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+botton {
+	font-size: 0em;
+	text-align: center;
+}
+
 #result_1, #result_2{
   text-transform: capitalize;
 }

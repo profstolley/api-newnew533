@@ -1,5 +1,5 @@
-var food = {
-	"Dishes": {
+var food = [
+ {
 		"name": "Sweet Soy Chicken Wings",
 		"number": "16",
     "type": "stir-fried",
@@ -7,10 +7,25 @@ var food = {
 		"salt",
 		"soysauce",
     "Chicken Wings",
-    "sugar"
+    "sugar" ]},
+	{
+			"name": "potato",
+			"number": "10",
+	    "type": "stir-fried",
+			"material": [
+			"salt",
+			"soysauce",
+	    "Chicken Wings",
+	    "sugar" ]}
   ]
-	},
-  $('#result').hide();
-  	$('#button').on("click",function(e){
-  $('#result').show();
-});
+
+ $("#user-form").on("submit", function(e){
+	var foodname = $("#food").val();
+	$("#result").append("<li>" + foodname + "</li>");
+	console.log("hello");
+	e.preventDefault();
+ });
+
+ $("#food").on("focus", function(e){
+	 console.log("kakaksk");
+ });
